@@ -1,0 +1,38 @@
+INFO:root:Log: Sending CONNECT (u0, p0, wr0, wq0, wf0, c0, k60) client_id=b'program1'
+INFO:root:Log: Received CONNACK (1, 0)
+INFO:root:Connected OK, Return Code: 0
+INFO:root:Log: Sending SUBSCRIBE (d0, m1) [(b'PideParker/Tokens', 0)]
+INFO:root:Subscribed To Topic: PideParker/Tokens
+INFO:root:Log: Sending SUBSCRIBE (d0, m2) [(b'PideParker/Tokens', 1)]
+INFO:root:Subscribed To Topic: PideParker/Tokens
+INFO:root:Log: Sending SUBSCRIBE (d0, m3) [(b'PideParker/Tokens', 2)]
+INFO:root:Subscribed To Topic: PideParker/Tokens
+INFO:root:Publishing the Message
+INFO:root:Log: Sending PUBLISH (d0, q0, r0, m4), 'b'PideParker/Tokens'', ... (14 bytes)
+INFO:root:In Publish Callback Function, Mid = 4
+INFO:root:Published return = (0, 4)
+INFO:root:Log: Received SUBACK
+INFO:root:Log: Received SUBACK
+INFO:root:Log: Received SUBACK
+INFO:root:Log: Received PUBLISH (d0, q0, r0, m0), 'PideParker/Tokens', ...  (14 bytes)
+INFO:root:Message Recieved:- 'Test Message 0' 
+INFO:root:Log: Sending PUBLISH (d0, q1, r0, m5), 'b'PideParker/Tokens'', ... (14 bytes)
+INFO:root:Published return = (0, 5)
+INFO:root:Log: Received PUBLISH (d0, q1, r0, m151), 'PideParker/Tokens', ...  (14 bytes)
+INFO:root:Log: Sending PUBACK (Mid: 151)
+INFO:root:Message Recieved:- 'Test Message 1' 
+INFO:root:Log: Received PUBACK (Mid: 5)
+INFO:root:In Publish Callback Function, Mid = 5
+INFO:root:Log: Sending PUBLISH (d0, q2, r0, m6), 'b'PideParker/Tokens'', ... (14 bytes)
+INFO:root:Published return = (0, 6)
+INFO:root:Log: Received PUBLISH (d0, q2, r0, m201), 'PideParker/Tokens', ...  (14 bytes)
+INFO:root:Log: Sending PUBREC (Mid: 201)
+INFO:root:Log: Received PUBREC (Mid: 6)
+INFO:root:Log: Sending PUBREL (Mid: 6)
+INFO:root:Log: Received PUBREL (Mid: 201)
+INFO:root:Message Recieved:- 'Test Message 2' 
+INFO:root:Log: Sending PUBCOMP (Mid: 201)
+INFO:root:Log: Received PUBCOMP (Mid: 6)
+INFO:root:In Publish Callback Function, Mid = 6
+INFO:root:Log: Sending DISCONNECT
+INFO:root:Disconnected, Result Code 0

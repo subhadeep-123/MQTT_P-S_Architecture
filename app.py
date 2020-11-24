@@ -5,7 +5,7 @@ import sys
 import os
 
 os.system('cls')
-broker = "192.168.0.100"
+broker = "broker.hivemq.com"
 logging.basicConfig(filename="MQTT.log",
                     filemode="w",
                     level=logging.INFO)
