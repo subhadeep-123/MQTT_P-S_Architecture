@@ -3,8 +3,12 @@ conn = sqlite3.connect('Example.db')
 c = conn.cursor()
 
 
-c.execute('''CREATE TABLE stocks (date text, trans text, symbol text, qty real, price real)''')
-print("Connected to the datebase baby!!")
+c.execute('''CREATE TABLE stocks (date text, 
+								  trans text, 
+								  symbol text, 
+								  qty real, 
+								  price real)''')
+print("Connected to the datebase")
 
 
 # Insert a row of data
