@@ -1,8 +1,9 @@
+import os
 import paho.mqtt.client as mqtt
 import logging
 import time
 import sys
-import os
+
 
 os.system('cls')
 broker = "broker.hivemq.com"
@@ -23,7 +24,7 @@ def on_connect(client, userdata, flags, rc):
         client.connected_flag = True  # set Flag
     else:
         conn_code = {1: "Connection refused – incorrect protocol version",
-                     2: "Connection refused – invalid client identifier",
+                     2: "Connection refused – invalid client identṇifier",
                      3: "Connection refused – server unavailable",
                      4: "Connection refused – bad username or password",
                      5: "Connection refused – not authorised"}
